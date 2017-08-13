@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+</head>
+<body>
+<div class="div1" >
+<h2> product Name:</h2> <input type="text" #productName > <br>
+<h2> product Price:</h2> <input type="number" #productPrice > <br>
+<h2>product Count:</h2> <input type="number" #count > <br><br>
+<button align = "center" class="btn btn-info" (click)="addProduct(productName.value,productPrice.value,count.value)"> Add to Bill </button>
+<br><br>
+<div class="container">
+<div class="panel panel-default">
+  <div class="panel-heading" > <h2> view bill </h2> </div>
+  <div class="panel-body">
+     <table class="table-striped" align="center">
+      <tr>
+      <th>Product Name</th>
+      <th>Price</th>
+      <th>Count</th>
+      </tr>
+    <tr *ngFor="let product of products">
+      <td>{{product.getName()}}</td>
+      <td>{{product.getPrice()}}</td>
+      <td>{{product.getCount()}}</td>
+      <td><a href="#" (click)="removeProduct(product)">  Delete </a></td>
+     </tr> 
+</table>
+    <br>
+  </div>
+</div>
+</div>
+<h2> Total Products:</h2> <input class="result" type="text" value={{products.length}}> 
+<br>
+<h2> Total Price:</h2> <input class="result" type="text" value={{calculatePrice()}}>
+</div>
+</body>

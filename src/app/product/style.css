@@ -1,0 +1,90 @@
+
+
+
+
+body {
+    background-image: url("Products.png");
+    background-repeat: repeat-x;
+     background-color: whitesmoke;
+    
+}
+
+table, th, td {
+   border-style: dotted dashed solid double;
+    border: 3px;
+    background-color:#638500;
+    text-align: center;
+     box-shadow: 5px 4px 5px#638500;
+    width: 60%;
+   
+}
+
+ th, td {
+    padding: 2px;
+}
+input{
+    border: 3;
+    border-style: double;
+    background-color:whitesmoke;
+    height: 29px;
+    box-shadow: 5px 4px 5px grey;
+    width: 100%;
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+}
+
+button {
+    background-color: #00CC33; 
+    border: 2;
+    color: white;
+    padding: 7.5px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+h1{ font-weight:bold;
+   font-size:16px ; font-style:oblique ; color:#666 ;}
+
+h2{ font-size:16px; color:#00CC33; font-weight:bolder;}
+
+h3{font-weight:normal; font-size:14px;}
+
+h4{font-family: "Chiller", Courier, monospace ;
+   font-size:24px ; font-style:oblique ; color:#00CC33;
+   text-transform:uppercase;}
+
+a:link{color:#208FFF;}
+
+a:visited{color:#208FFF;}
+
+a:hover {color:#666 ;}
+
+.container{
+  border-style: groove;;
+  border: 1;
+  color: black;
+
+}
+.div1{
+    margin: 0 auto;
+    width: 50%;
+    height: 50%;
+    border: 3px;
+    padding: 20px;
+    text-align: left;
+    background-color:#e7ffd1;
+    box-shadow: 0px 0px 50px grey;
+
+}
+
+.result{
+    background-color: #638500;
+    text-align: center;
+    color: white;
+    font-size:20px;
+    height: 32px;
+}
+
